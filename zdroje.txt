@@ -10,7 +10,7 @@ https://www.ibm.com/cloud/learn/ios-app-development-explained
 
 https://cs.wikipedia.org/wiki/V%C3%BDvoj_mobiln%C3%ADch_aplikac%C3%AD
 
-https://en.wikipedia.org/wiki/Mobile_app_development
+
 
 https://www.ibm.com/cloud/learn/mobile-application-development-explained
 
@@ -26,3 +26,6 @@ https://pixelfield.cz/vyvoj-aplikaci/
 
 https://synetech.cz/cs/blog/vyvoj-mobilnich-aplikaci-krok-po-kroku
 
+https://sk.eyewated.com/co-je-mobilna-aplikacia/
+
+https://www.emm.sk/blog/our-customers-have-traditionally-valued-special-attention/
