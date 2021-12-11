@@ -8,12 +8,14 @@
 \pagenumbering{arabic} %roman - "písmenkové" číslovanie
 \usepackage[center]{caption}
 \usepackage{footnote}
+\usepackage{graphicx}
+\graphicspath{{./grafika/}}	%cesta k obrázkom
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
 \usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
 \usepackage[utf8]{inputenc}
-\usepackage{graphicx}
+%\usepackage{graphicx}		%použité vyššie, potrebné pred \graphicspath
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
 
@@ -130,7 +132,7 @@ Ako každý vývoj, tak aj vývoj mobilných aplikácií pozostáva z niekoľký
 \begin{figure}[h!]
 \includegraphics[scale=0.35]{proces_vyvoja_aplikacie}
 \caption{Proces vývoja aplikácie
-\\ Zdroj: http://www.umletino.com/
+\\ Zdroj:\url{http://www.umletino.com/}
 \\ Autor: Lujza Šufliarska}
 \end{figure}
 
@@ -238,7 +240,7 @@ Funkčnosť aplikácie je nesmierne dôležitá, preto testujeme na skoro všetk
 
 
 
-\subsection{Umiestnenie aplikácie na trh}
+\subsection{Umiestnenie aplikácie na trh} \label{sec:Umiestnenie aplikácie na trh}
 \quad Pred publikovaním aplikácie si treba založiť  účet na Google Play alebo App Store. Vytvorenie účtu môže trvať aj niekoľko dní, a preto na to netreba zabudnúť.
 
 Pri publikácií je dôležité myslieť aj na pravidlá obchodov App Store a Google Play, ktoré sú rozdielne. Napríklad. Google hneď nekontroluje aplikáciu, ale môže to niekedy urobiť. Na druhej strane, Apple ju kontroluje hneď a môže to trvať aj 2 týždne. Existuje aplikácia PreApps, ktorá vám poskytne spätnú väzbu ešte predtým, ako svoju aplikáciu spustíte do obehu.
@@ -333,7 +335,11 @@ Nemôžeme zabudnúť na dlhodobé výdavky na údržbu, úpravu aplikácie, spr
 Programovací jazyk             & Swift, objective-C & Java, Kotlin                 \\ \hline
 IDE (vývojové prostredie)      & Xcode              & Android Srudio               \\ \hline
 Cena registrácie do obchodu    & \$\begin{math}99\end{math} ročne         & \$\begin{math}25\end{math} jednorázovo             \\ \hline
-Schválenie aplikácie v obchode\footnote{tiež spomenuté v kapitole Umiestnenie aplikácie na trh} & V priemere 2 dni   & Krátka doba (niekoľko hodín) \\ \hline
+Schválenie aplikácie v obchode\footnote{tiež spomenuté v kapitole \hyperref[sec:Umiestnenie aplikácie na trh]{Umiestnenie aplikácie na trh}} & V priemere 2 dni   & Krátka doba (niekoľko hodín) \\ \hline
+
+% \footnote - poznámka pod čiarou, na to aby bola poznámka pod čiarou zobrazená - \begin{savenotes} a \end{savenotes}
+% \hyperref - klikateľný preklik na kapitolu, pri kapitole musí byť \label{sec:}
+
 \end{tabular}
 \caption{Tabuľka porovnania rozdielov medzi systémami iOS a Android vo vývoji aplikácií}
 \end{table}
@@ -388,7 +394,7 @@ Pre pridanie aplikácie do obchodu Google Play je potrebné uhradiť jednorázov
 Apple App Store si účtuje až \$99 ročne za to, aby mohla byť aplikácia pridaná do obchodu. Tých \$99 je za registráciu (a používanie) do programu Apple Developer Program. Tento progrm vám poskytne prístup k množstvu výhod, ako napríklad pridávanie aplikácií do App Storeu, pridávanie Safari rozšírení, testovacie nástroje, analýza aplikácií....
 \cite{CWC}
 
-\cite{RedBytes, eYewated3, eliteml}
+\cite{eYewated3, eliteml}
 \\	%prázdny riadok
 
 
@@ -417,10 +423,27 @@ Je dôležité urobiť si plán a držať sa ho. Tak si môžeme byť istý, že
 
 
 \section{Reakcia na témy}
-spoločenské súvislosti informatiky – označenie: \paragraph{Spoločenské súvislosti.}
-história informatiky – označenie: \paragraph{Historické súvislosti.}
-technológia a ľudia – označenie: \paragraph{Technológia a ľudia.}
-udržateľnosť a etika – označenie: \paragraph{Udržateľnosť a etika.}
+\paragraph{Grafické vyjadrenie informácií v informatike}
+V 4. prednáške nám bolo poukázané na klady vizualizácie informácií pomocou grafiky. S týmto súhlasím, pretože informácie spracované graficky sú viac zaujímavejšie ako čistý text, je to prehľadnejšie, vedia tomu porozumieť aj ľudia, ktorí nehovoria daným jazykom, ľahšie a skôr si to zapamätáme... Dá sa to aplikovať aj na moju tému. Napríklad pri wireframingu, kde kreslíme všetky obrazovky aplikácie, vidíme skoro presne, ako chceme, aby aplikácia vyzerala, potom z toho vieme aj tú aplikáciu ľahšie naprogramovať. Snažila som sa aj do článku vložiť čo najviac grafického materiálu, ale nie všade sa to dalo alebo skôr hodilo.
+
+
+\paragraph{Sedem statočných (inžinierov)}
+Prednáška číslo 5 bola o 7 statočných inžinieroch. Bola to zaujímavá prednáška, pretože sme sa dozvedeli o informatikoch, ktorých vynálezy používame denne.
+
+Jedným zo spomínaných informatikov bol pán Bill English, ktorý pomohol vytvoriť prvý prototyp počítačovej myši. Neviem si predstaviť presúvať sa medzi kartami webového prehliadača alebo v súbore na písanie textu bez myšky. Nie je to nemožné, je to len náročnejšie alebo menej efektívne, takže určite mi uľahčila prácu pri písaní tohto článku.
+
+Ďalším pánom bol napríklad Larry Tesler, ktorý mi zefektívnil písanie textu z wordu do LaTeXu. On totižto vymyslel funkciu copy-paste. Podľa mňa je to asi jedna z najpoužívanejších funkcií, ktorá šetrí čas.
+
+
+\paragraph{Načo budem inžinierom?}
+Pozvaná prednáška s pánom profesorom Ivanom Kotuliakom bola tiež veľmi zaujímavá. Mali sme možnosť stretnúť sa a diskutovať, síce len online, s dekanom našej fakulty, ktorý nám povedal o výhodách vyštudovania inžinierskeho, respektíve bakalárskeho stupňa štúdia. Jednou z motivácii štúdia, na ktorej sme sa zhodli skoro všetci, boli peniaze. Okrem toho, že nástupné platy sa odvíjajú od vyštudovaného stupňa, tak dlhšie štúdium (v zmysle, štúdia viacerých stupňov) nás dokáže lepšie pripraviť na prácu a dá nám užitočné skúsenosti a zručnosti.
+
+Jednou takou zručnosťou, ktorú som využila pri písaní tohto článku, je hľadanie zdrojov a materiálov. Táto zručnosť sa mi určite zíde aj v budúcnosti, nie len pri písaní nejakého textu.
+
+
+\paragraph{Vedecké publikovanie v informatike. Plagiátorstvo a ako sa mu vyhnúť}
+Prednáška 9 bola venovaná plagiátorstvu. Je to vec, ktorá sa dá robiť aj nevedome, ale sú aj ľudia, ktorí sú leniví vynaložiť námahu a urobiť niečo sami a  radšej niečo skopírujú a prehlásia to za svoje. V tomto článku som si dala námahu, aby som všetko z čoho som čerpala všade uviedla. Použila som hlavne spomínané plagiátorstvo parafrázovaním, pričom som na konci vždy uviedla zdroj. Zdroj som tiež uviedla pri použití plagiátorstva pri preklade. Táto prednáška bola prínosná, pretože boli uvedené aj spôsoby, ako sa plagiátorstvu vyhnúť. Tieto znalosti vieme použiť aj neskôr, napríklad pri písaní bakalárskej práce.
+
 
 
 
